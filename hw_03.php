@@ -11,17 +11,16 @@ class User {
     function __construct(string $in_name, int $in_cash) {
         $this->$name = $in_name;
         self::$cash = $in_cash;
-        echo "Конструктор"
+        echo "Конструктор";
     }
     function __destruct() {
         echo "Уничтожается " . __CLASS__ ;
     }
     public function IDontUnderstand() {
-        return "What's going on here?"
+        return "What's going on here?";
     }
     public function WheresTheTruth() {
-        string $quote = "Your're " . (string)AGE . " years old?";
-        return $quote;
+        return "Your're " . (string)AGE . " years old?";
     }
 }
 
@@ -41,3 +40,6 @@ class AngryClient extends Client {
         }
     }
 }
+
+
+
